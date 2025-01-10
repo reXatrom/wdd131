@@ -21,28 +21,28 @@ span{
 }
 
 /* Flexbox for navigation */
-nav ul {
+nav {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     margin-top: 0.5rem;
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 10px;
+    /* list-style: none;
+    padding: 0; */
 }
 
 nav a {
+    background: none;
     text-decoration: none;
-    color: #f0eee7;
+    color: white;
     font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
-    color: #007bff;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: overline;
 }
 
 /* Styling for cards in main */
@@ -69,7 +69,8 @@ nav a:hover {
 main {
     max-width: 900px;
     margin: 2rem auto;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
 }
 
