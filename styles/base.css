@@ -1,0 +1,87 @@
+/* Base styling for the body */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #001f3f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+span{
+    color: #ffd700;
+}
+
+/* Flexbox for navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f0eee7;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+/* Styling for cards in main */
+.card {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+/* Responsive main content */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    display: grid;
+    gap: 2rem;
+}
+
+/* Footer styling */
+footer {
+    background-color: #001f3f;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: white;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
