@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/temples.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Temple Album</h1>
         <nav>
-            <ul>
+            <button id="hamburger" aria-label="Toggle navigation menu">☰</button>
+            <ul id="menu">
                 <li><a href="http://">Home</a></li>
                 <li><a href="http://">Old</a></li>
                 <li><a href="http://">New</a></li>
@@ -28,7 +30,7 @@
 
     <main>
         <h2>Home</h2>
-        <section>
+        <section id="temples">
             <figure>
                 <img src="images/aba-nigeria-temple-lds-1636397-wallpaper.jpg" alt="Temple">
                 <figcaption>Aba Nigeria Temple</figcaption>
@@ -78,8 +80,8 @@
     </main>
 
     <footer>
-            <p>&copy; <span id="currentyear"></span> Hounliho J. Samson, Lagos state / Nigeria</p>
-            <p id="lastModified"></p>
+            <p>&copy; <span id="currentyear"></span> Hounliho J. Samson - Lagos state, Nigeria</p>
+            <p>Last updated: <span id="lastModified"></span></p>
     </footer>
     
 </body>
