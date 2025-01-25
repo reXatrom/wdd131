@@ -61,7 +61,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 5px 5px;
-    text-align: left;
+    text-align: center;
 }
 
 .no-dot strong {
@@ -69,11 +69,11 @@ header {
     text-align: right; 
 }
 
-.no-dot li > *:not(strong) {
-    flex: 1;
+/* .no-dot li > *:not(strong) {
+    flex: 2;
     text-align: left;
     margin-left: 5px;
-}
+} */
 
 .overlay {
     position: absolute;
