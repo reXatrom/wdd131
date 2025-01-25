@@ -1,0 +1,120 @@
+:root {
+    --primary-color: black;
+    --primary1-color: green;
+    --secondary-color: #ffffff;
+    --background-color: #f0f0f0;
+    --font-family: Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+header {
+    text-align: center;
+    background-color: var(--primary1-color);
+    color: var(--secondary-color);
+    padding: 1rem 0;
+    letter-spacing: 7px;
+    font-size: 2rem;
+
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.no-dot {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    text-align: left;
+}
+
+.no-dot ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.no-dot li {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 5px;
+    text-align: left;
+}
+
+.no-dot strong {
+    min-width: 150px;
+    text-align: right; 
+}
+
+.no-dot li > *:not(strong) {
+    flex: 1;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.overlay {
+    position: absolute;
+    top: 20%;
+    background-color: rgba(0, 128, 0, 0.85);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 500px;
+}
+
+
+.overlay.data {
+    left: 5%;
+}
+
+.overlay.weather {
+    right: 5%;
+}
+
+main {
+    padding: 1rem;
+}
+
+.data, .weather {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.weather .icon::after {
+    content: '🌤️';
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding:  1rem;
+    background-color: var(--primary1-color);
+    color: var(--secondary-color);
+}

@@ -1,0 +1,28 @@
+@media (max-width: 767px) {
+   .data, .weather {
+      width: 100%;
+   }
+}
+
+@media (min-width: 768px) {
+   main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+   }
+
+   .overlay {
+      width: 200px;
+      padding: 0.5rem;
+   }
+
+   .hero img {
+    width: 50%;
+   }
+
+   .data, .weather {
+    width: 25%;
+   }
+}
