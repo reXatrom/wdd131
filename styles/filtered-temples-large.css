@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+    #hamburger {
+        display: block; /* Show hamburger in small screens */
+    }
+
+    nav ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Place the menu below the nav */
+        right: 0;
+        background: #0073e6;
+        width: 100%; /* Full width for small screens */
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: flex; /* Show menu when hamburger is clicked */
+    }
+
+    nav ul li a {
+        padding: 1rem; /* Add more padding for better spacing in mobile */
+    }
+
+    #temples {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    figure {
+        max-width: 100%; /* Shrink figure size for smaller screens */
+    }
+}

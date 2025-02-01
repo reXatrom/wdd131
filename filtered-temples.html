@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W02 - Picture Album</title>
+    <meta name="author" content="Hounliho Jaurex Samson">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals.
+    Hounliho Jaurex Samson.
+    Intro to Dynamic Web Fundamentals.">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Filtered Temple Album</h1>
+        <nav>
+            <button id="hamburger" aria-label="Toggle navigation menu">☰</button>
+            <button id="home">Home</button>
+            <button id="old">Old</button>
+            <button id="new">New</button>
+            <button id="large">Large</button>
+            <button id="small">Small</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="temples-container"></div>
+    </main>
+
+    <footer>
+        <p>Standard Footer Content - &copy; <span id="currentyear"></span> - Hounliho J. Samson - Nigeria </p>
+        <p id="date">last Modified: </p>
+    </footer>
+    
+</body>
+</html>
