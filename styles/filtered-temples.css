@@ -116,6 +116,12 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
+main h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
 
 /* main {
     max-width: 800px;
@@ -125,13 +131,6 @@ nav ul li a:hover {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-main h2 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    color: #333;
 }
 
 /* Temples Section */
