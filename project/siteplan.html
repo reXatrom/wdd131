@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan: Rexatrom Travel Agency</title>
+
+    <meta name="author" content="Hounliho Jaurex Samson">
+    <meta name="description" content="WDD 131 - Site Plan Proposal.
+    Hounliho Jaurex Samson.
+    This assignment is to build a basic website plan in HTML. It is a single document file, with the following outlines:
+    1. Site Name,
+    2. Site Purpose,
+    3. Scenarios,
+    4. Color Schema,
+    5. Typography,
+    6. Wireframe">
+
+    <!-- Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        /* Basic Style */
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            font-family: 'Open Sans', sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        header, footer {
+        text-align: center;
+        padding: 10px;
+        }
+
+        header {
+        background-color: #1a73e8;
+        color: #fff;
+        }
+
+        footer {
+        background-color: #333;
+        color: #fff;
+        margin-top: 40px;
+        }
+
+        h1 {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        }
+
+        h2 {
+        font-family: 'Montserrat', sans-serif;
+        color: #1a73e8;
+        text-align: center;
+        }
+
+        h3 {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        }
+
+
+
+        section {
+        background: #fff;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        }
+
+        /* Accent color used for highlights */
+        .accent {
+        color: #fbbc04;
+        }
+
+        /* Wireframe sketch styles */
+        pre.wireframe {
+        background: #eee;
+        padding: 10px;
+        border: 1px dashed #ccc;
+        overflow-x: auto;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Rexatrom Travel Agency Site Plan</h1>
+    </header>
+
+    <!-- Site Name Section -->
+    <section id="site-name">
+        <h2>Rexatrom.com</h2>
+        <p><strong>Rexatrom Travel Agency</strong></p>
+
+        <p>
+            The site name was chosen to evoke a sense of adventure and exploration.
+            It reflects our commitment to helping travelers discover unique destinations around the globe.
+        </p>
+    </section>
+
+    <!-- Site Purpose Section -->
+    <section id="site-purpose">
+        <h2>Site Purpose</h2>
+        <p>
+            The purpose of this website is to serve as a comprehensive 
+            travel resource. It will offer destination guides, booking services, travel tips, 
+            and custom itinerary planning to empower travelers to explore the world with confidence.
+        </p>
+    </section>
+
+    <!-- Scenarios Section  -->
+    <section id="scenarios">
+        <h2>Scenarios</h2>
+        <ol>
+            <li>
+                <strong>Scenario 1:</strong> I am planning a family vacation in Europe and 
+                need to compare travel packages, accommodations, and activities. 
+                How can this site help me make an informed decision?
+            </li>
+
+            <li>
+                <strong>Scenario 2:</strong> I am a solo traveler looking for affordable travel 
+                deals in Southeast Asia. Can the website suggest cost-effective 
+                travel packages and provide local insights?
+            </li>
+        </ol>
+    </section>
+
+    <!-- Color Schema Section -->
+    <section id="color-schema">
+        <h2>Color Schema</h2>
+        <p>For our website, we have selected the following colors:</p>
+        <ul>
+            <li>
+                <strong>Primary Color:</strong> <span class="accent">#1a73e8</span> 
+                – Used for headings, the header background, navigation menus, and call-to-action buttons.
+            </li>
+
+            <li>
+                <strong>Secondary Color:</strong> <span class="accent">#fbbc04</span> 
+                – Used for accents, highlights, and interactive elements such as hover states.
+            </li>
+        </ul>
+
+        <p>
+            This combination provides a vibrant yet professional look that appeals 
+            to travelers by inspiring confidence and adventure.
+        </p>
+    </section>
+
+    <!-- Typography Section -->
+    <section id="typography">
+        <h2>Typography</h2>
+        <p>We will use the following fonts:</p>
+
+        <ul>
+            <li>
+                <strong>Montserrat:</strong> Applied to all headings and navigation elements for a modern, bold appearance.
+            </li>
+
+            <li>
+                <strong>Open Sans:</strong> Used for all body text and paragraphs to ensure readability and an inviting tone.
+            </li>
+        </ul>
+
+        <p>
+            These fonts have been selected for their clear legibility and compatibility across desktop and mobile devices.
+        </p>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Rexatrom Travel Agency</p>
+    <script>
+      // Dynamically display the current year in the footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
