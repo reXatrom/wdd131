@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+
+    <meta name="author" content="Hounliho Jaurex Samson">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals.
+    Hounliho Jaurex Samson.
+    Creating product review form page using a good form design.">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <h1>Submit a Product Review</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+            <!-- Product Name Dropdown -->
+            <label for="product-name">Product Name:</label>
+            <select name="product" id="product-name" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <label><input type="radio" name="rating" value="1" required> ☆</label>
+                <label><input type="radio" name="rating" value="2"> ☆☆</label>
+                <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+                <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+                <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+            </fieldset>
+
+            <label for="install-date">Date of Installation:</label>
+            <input type="date" id="install-date" name="install_date" required>
+
+            <fieldset>
+                <legend>Useful Features (Check all that apply):</legend>
+                <label><input type="checkbox" name="features" value="easy-use"> Easy to Use</label>
+                <label><input type="checkbox" name="features" value="durable"> Durable</label>
+                <label><input type="checkbox" name="features" value="affordable"> Affordable</label>
+                <label><input type="checkbox" name="features" value="efficient"> Energy Efficient</label>
+            </fieldset>
+
+            <!-- Written Review -->
+            <label for="review">Write a Review (Optional):</label>
+            <textarea id="review" name="review" rows="4" placeholder="Share your experience..."></textarea>
+
+            <!-- User Name (Optional) -->
+            <label for="username">Your Name (Optional):</label>
+            <input type="text" id="username" name="username">
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Review</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Rexatrom Travel Agency</p>
+    </footer>
+</body>
+</html>
